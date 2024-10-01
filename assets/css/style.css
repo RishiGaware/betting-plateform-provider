@@ -1841,6 +1841,7 @@ img {
 ****************************** */
 
 .app-screenshots .single-screenshot {
+    width: 100vw;
     position: relative;
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
@@ -1848,7 +1849,7 @@ img {
 
 @media (max-width: 575px) {
     .app-screenshots .single-screenshot>img {
-        max-width: 270px;
+        max-width: 500px;
         margin: 0 auto;
     }
 }
