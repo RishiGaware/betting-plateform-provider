@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+.custom-content h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem; /* Default size */
+    font-weight: 800;
+    color: #1f2937; /* Gray color */
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .custom-content h1 {
+      font-size: 5rem; /* Medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-content h1 {
+      font-size: 6rem; /* Large screens */
+    }
+  }
+  
+  .custom-content h1 span {
+    background: linear-gradient(to right, #10b981, #38bdf8);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .custom-content p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #6b7280; /* Gray */
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-content p {
+      font-size: 1.25rem; /* Larger size on larger screens */
+    }
+  }
+  
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust the bottom space */
+    right: 10px;  /* Adjust the right space */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+#whatsapp-icon img {
+    width: 45px; /* You can adjust the size if needed */
+    transition: transform 0.3s; /* Smooth animation on hover */
+}
+
+#whatsapp-icon:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+#instagram-icon {
+  position: fixed; /* Fix the icon to the viewport */
+  bottom: 20px; /* Distance from the bottom */
+  left: 10px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+#instagram-icon img {
+  width: 60px; /* Set the width of the icon */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Add a hover effect */
+}
+
+#instagram-icon:hover img {
+  transform: scale(1.1); /* Scale icon on hover */
+}
+
+
+
+#telegram-icon {
+  position: fixed; /* Fix position relative to the viewport */
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 8px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+#telegram-icon img {
+  width: 65px; /* Set a consistent width for the icon */
+  height: auto; /* Maintain the aspect ratio */
+  transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+#telegram-icon img:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+
+
+
+
+
+.footer_whatsapp_img {
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  z-index: 1000;
+  width: 44px;
+  height: auto;
+}
+
+.footer_quotation_img {
+  position: fixed;
+  bottom: 300px;
+  right: 50px;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 600px) {
+  /*.footer_call_img {*/
+  /*    position: fixed;*/
+  /*    bottom: 40px;*/
+  /*    right: 23px;*/
+  /*    z-index: 1000;*/
+  /*    width: 40px;*/
+  /*}*/
+  .footer_whatsapp_img {
+      position: fixed;
+      bottom: 100px;
+      right: 25px;
+      z-index: 1000;
+      width: 40px;
+  }
+  .footer_quotation_img {
+      position: fixed;
+      bottom: 130px;
+      right: 20px;
+      z-index: 1000;
+      width: 40px;
+  }
+}
+
+
+
+.custom-heading{
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  font-size: 100px;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  
+}
+
+
+/* Default tab styles */
+.tab-link {
+  background-color: #7fdfff; /* Default background color */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Active tab styles */
+.tab-link.current {
+  background-color: #00b3ff; /* New background color for active tab */
+  color: #000000; /* Text color for active tab */
+}
+
+/* Optional: Hover effect */
+.tab-link:hover {
+  background-color: #00b3ff; /* New background color for active tab */
+}
+
+
+
+/* styles.css */
+
+/* Style for the option section */
+.option {
+  background-color: #ff0000; /* Change this to the desired color */
+  padding: 500px;
+  border-radius: 5px;
+}
+
+/* Style for the value section */
+.value {
+  background-color: #ff0000; /* Change this to the desired color */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* button style */
+/* From Uiverse.io by JkHuger */ 
+.rainbow-hover {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff7576;
+  background-color: #2B3044;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  line-height: 24px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px #2B3044,
+    0px 4px 16px #2B3044;
+  transform-style: preserve-3d;
+  transform: scale(var(--s, 1)) perspective(600px)
+    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  perspective: 600px;
+  transition: transform 0.1s;
+}
+
+.sp {
+  background: linear-gradient(
+      90deg,
+      #866ee7,
+      #ea60da,
+      #ed8f57,
+      #fbd41d,
+      #2cca91
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: block;
+}
+
+.rainbow-hover:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}
+
+/* button container */
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px; /* Add some space between buttons */
+  margin-top: 50px;
+  margin-bottom: -80px;
+}
+
+button {
+  width: 200px; /* Set the button width */
+  padding: 10px;
+  background-color: #ff5733; /* Adjust as per your design */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000; /* Hover effect */
+}
+
