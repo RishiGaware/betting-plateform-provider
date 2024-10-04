@@ -1839,50 +1839,34 @@ img {
 /* ******************************
 :: 14.0 SCREENSHOTS AREA CSS
 ****************************** */
-
-.app-screenshots .single-screenshot {
+/* Ensure the container takes full width and overflow is hidden */
+.app-screenshots {
+    display: flex;
+    overflow: hidden;
     width: 100vw;
-    position: relative;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
 }
 
-@media (max-width: 575px) {
-    .app-screenshots .single-screenshot>img {
-        max-width: 500px;
-        margin: 0 auto;
+/* Each screenshot takes up 100% of the viewport width */
+.single-screenshot {
+    min-width: 100vw;  /* Each image will take up 100% of the viewport width */
+    display: flex;
+    justify-content: center;
+}
+
+.single-screenshot img {
+    width: 100vw;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+/* On larger screens, add some spacing between the images */
+@media (min-width: 768px) {
+    .single-screenshot img {
+        width: 80vw; /* Show only one image, but keep it within 80% of the screen */
     }
 }
 
-.app-screenshots .slick-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
 
-.app-screenshots .slick-dots li button {
-    font-size: 0;
-    height: 8px;
-    width: 8px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    margin: 5px;
-    -webkit-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.app-screenshots .slick-dots .slick-active button {
-    background-color: var(--primary-color-2);
-    -webkit-box-shadow: 0 1px 5px var(--primary-color-2);
-    box-shadow: 0 1px 5px var(--primary-color-2);
-}
 
 /* ******************************
 :: 15.0 REVIEWS AREA CSS
